@@ -1,55 +1,57 @@
-<h1>Arbetsprov frontend</h1>
+# Arbetsprov frontend
+I arbetsprovet tittar vi på hur du löser frontend-relaterade problem med fokus på HTML, CSS och Javascript, men också på PHP för att skriva ut data. Vi kollar också om du hänger med på övriga punkter, såsom syntax och kommentarer.
 
-<p>I arbetsprovet tittar vi p&aring; hur du l&ouml;ser frontend-relaterade problem med fokus p&aring; HTML, CSS och Javascript, men ocks&aring; p&aring; PHP f&ouml;r att skriva ut data. Vi kollar ocks&aring; om du h&auml;nger med p&aring; &ouml;vriga punkter, s&aring;som syntax och kommentarer.</p>
+Här är dokumentation över utvecklingsreglerna hos oss: [Utvecklingsregler](https://wgrsecure.se/docs/coding-style/)
 
-<p>H&auml;r &auml;r dokumentation &ouml;ver utvecklingsreglerna hos oss: <a href="https://wgrsecure.se/docs/coding-style/">https://wgrsecure.se/docs/coding-style/</a></p>
+Börja med att skapa en fork av detta repo för att du ska få en kopia av koden men i ett eget repo på din användare på GitHub. Gå sedan in på ditt repo kopiera urlen till ditt repo. Använd sedan valfri terminal för att klona ditt repo och börja jobba med koden i en kodeditor.
 
-<p>B&ouml;rja med att klona detta repo och skapa en branch med ditt namn.</p>
+**Exempel:**
+```
+git clone https://github.com/din-användare/ditt-repo.git
+```
+**Om du inte har en installerad lokal server eller plugin, kan du följa guiden nedan:**
 
-<p><strong>Exempel:</strong></p>
+* Installera Node.js på din dator. Du kan ladda ned och installera det från Node.js officiella webbplats.
+* När Node.js är installerat, kan du använda npm för att installera paket som hjälper dig att köra en lokal server. Ett populärt exempel är http-server.
+* Öppna projektet via din kodeditor eller valfri terminal.
+* Kör följande kommando i terminalen för att installera http-server:
+```
+npm install -g http-server
+```
+* Navigera till katalogen där dina filer finns i terminalen och starta servern genom att köra:
+```
+http-server
+```
+Detta kommer starta en server och ge dig en URL som vanligtvis ser ut som http://127.0.0.1:8080 eller http://localhost:8080.
+* Öppna en webbläsare och skriv in URL:en som http-server gav dig för att se dina filer via localhost.
 
-<pre>git clone https://github.com/wgrgh/arbetsprov-frontend.git</pre>
+Utför ändringarna i filerna och när du känner dig klar gör en commit och push.
+```
+git add .
+git commit -m "Commit message"
+git push 
+git push --set-upstream origin förnamn-efternamn-arbetsprov
+```
+För att vi ska kunna se ditt repo behöver du göra det publikt eller bjuda in användare wgrgh som collaborator i repot.
 
-<pre>git checkout -b f&ouml;rnamn-efternamn-arbetsprov</pre>
+**Filer:**
 
-<p><strong>Om du inte har en installerad lokal server eller plugin, kan du f&ouml;lja guiden nedan:</strong></p>
+Designen hittar du i mappen designskiss. Du öppnar den med PhotoShop, har du inte tillgång till PhotoShop kan du använda https://www.photopea.com/.
 
-<ul>
-	<li>Installera Node.js&nbsp;p&aring; din dator. Du kan ladda ned och installera det fr&aring;n Node.js officiella webbplats.</li>
-	<li>N&auml;r Node.js &auml;r installerat, kan du anv&auml;nda npm f&ouml;r att installera paket som hj&auml;lper dig att k&ouml;ra en lokal server. Ett popul&auml;rt exempel &auml;r http-server.</li>
-	<li>Öppna projektet via din kodeditor eller valfri terminal.</li>
-	<li>K&ouml;r f&ouml;ljande kommando i terminalen f&ouml;r att installera http-server:<br>
-	<pre>npm install -g http-server</pre></li>
-	<li>Navigera till katalogen d&auml;r dina filer finns i terminalen och starta servern genom att k&ouml;ra:<br>
-	<pre>http-server</pre>
-  Detta kommer starta en server och ge dig en URL som vanligtvis ser ut som http://127.0.0.1:8080 eller http://localhost:8080.</li>
-	<li>&Ouml;ppna en webbl&auml;sare och skriv in URL:en som http-server gav dig f&ouml;r att se dina filer via localhost.</li>
-</ul>
+Du kan då använda den bifogade JPG-filen som referensbild istället för PSD:en. Teckensnitten som används är "Martel Sans" och "Cormorant Garamond" vilka båda hittas på Google Fonts.
 
-<p>Utf&ouml;r &auml;ndringarna i filerna och n&auml;r du k&auml;nner dig klar med arbetsprovet g&ouml;r en commit.&nbsp;<br>
-<pre>git add .</pre></p>
-<pre>git commit -m &quot;Commit message&quot;</pre>
-<pre>git push&nbsp;</pre>
-<pre>git push --set-upstream origin&nbsp;f&ouml;rnamn-efternamn-arbetsprov</pre>
+Koden är baserad på MVC-modellen.
 
-<p><strong>Filer:</strong></p>
+**Uppgifter:**
 
-<p>Designen hittar du i mappen designskiss. Du &ouml;ppnar den med PhotoShop, har du inte tillg&aring;ng till PhotoShop kan du anv&auml;nda https://www.photopea.com/.</p>
+1. Utgå från den befintliga filstrukturen i filmappen och bygg en responsiv sida av den bifogade PSD-filen. En stor del av den HTML som behövs är redan skriven, men ändra eller lägg till som du känner behövs.
 
-<p>Du kan d&aring; anv&auml;nda den bifogade JPG-filen som referensbild ist&auml;llet f&ouml;r PSD:en. Teckensnitten som anv&auml;nds &auml;r &quot;Martel Sans&quot; och &quot;Cormorant Garamond&quot; vilka b&aring;da hittas p&aring; Google Fonts.</p>
+3. Uppdatera sökfunktionen i js/scripts.js så att det inte spelar någon roll om du söker med stora bokstäver eller inte.
 
-<p>Koden &auml;r baserad p&aring; MVC-modellen.</p>
+4. Gör så att det går att söka på produkternas namn eller färg i samma sökruta.
 
-<p><strong>Uppgifter: &nbsp;</strong></p>
+5. I klassen “WGR_ExamplePageModel” finns en metod för att hämta data för en produkt givet ett visst id. Använd denna metod för att hämta data för produkten med id = 2. Visa sedan denna produkt i en popup-ruta (modal) vid klick på knappen ”Shoppa nu”, med en statisk köpknapp.
 
-<p>1. Utg&aring; fr&aring;n den befintliga filstrukturen i filmappen och bygg en responsiv sida av den bifogade PSD-filen. En stor del av den HTML som beh&ouml;vs &auml;r redan skriven, men &auml;ndra eller l&auml;gg till som du k&auml;nner beh&ouml;vs.</p>
+När du är klar återkoppla till personen du fått arbetsprovet ifrån.
 
-<p>3. Uppdatera s&ouml;kfunktionen i js/scripts.js s&aring; att det inte spelar n&aring;gon roll om du s&ouml;ker med stora bokst&auml;ver eller inte.</p>
-
-<p>4. G&ouml;r s&aring; att det g&aring;r att s&ouml;ka p&aring; produkternas namn eller f&auml;rg i samma s&ouml;kruta.</p>
-
-<p>5. I klassen &ldquo;WGR_ExamplePageModel&rdquo; finns en metod f&ouml;r att h&auml;mta data f&ouml;r en produkt givet ett visst id. Anv&auml;nd denna metod f&ouml;r att h&auml;mta data f&ouml;r produkten med id = 2. Visa sedan denna produkt i en popup-ruta (modal) vid klick p&aring; knappen &rdquo;Shoppa nu&rdquo;, med en statisk k&ouml;pknapp.</p>
-
-<p>N&auml;r du &auml;r klar &aring;terkoppla till personen du f&aring;tt arbetsprovet ifr&aring;n.</p>
-
-<p>Lycka till!</p>
+Lycka till!
