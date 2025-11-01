@@ -9,10 +9,10 @@
     input.addEventListener('input', filterProducts);
 
     function filterProducts() {
-        var filterValue = input.value;
+        var filterValue = input.value.toLowerCase();
 
         products.forEach(function(product) {
-            var title = product.getAttribute('data-title');
+            var title = product.getAttribute('data-title').toLowerCase();
 
             if (title.includes(filterValue)) {
                 product.classList.add('is-visible');

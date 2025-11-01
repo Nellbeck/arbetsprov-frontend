@@ -79,7 +79,7 @@
 					// Loop names of products
 					foreach ($pageModel->products as $product) {
 						?>
-						<li data-title="<?= $product->name ?>" class="product-item js-product is-visible">
+						<li data-title="<?= $product->name . $product->color?>" class="product-item js-product is-visible">
 							<div class="product-item__img">
 								<img src="/images/products/<?= $product->imageFileName ?>">
 							</div>
