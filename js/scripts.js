@@ -8,6 +8,19 @@
     // Bind events
     input.addEventListener('input', filterProducts);
 
+    document.addEventListener("DOMContentLoaded", function() {
+    const modal = document.getElementById("product-modal");
+    const btn = document.getElementById("buy-now-btn");
+    const closeBtn = document.querySelector(".close");
+
+    btn.addEventListener("click", () => modal.style.display = "flex");
+    closeBtn.addEventListener("click", () => modal.style.display = "none");
+
+    window.addEventListener("click", (event) => {
+        if (event.target === modal) modal.style.display = "none";
+    });
+    });
+
     function filterProducts() {
         var filterValue = input.value.toLowerCase();
 
