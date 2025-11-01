@@ -27,6 +27,16 @@ class WGR_ExamplePageModel extends WGR_BaseModel
 	public $pageDesc = 'Vi utvecklar innovativa, säkra och prisvärda system inom nagelvård. Låt oss överträffa dina förväntningar!';
 
 	/**
+	 * @var string
+	 */
+	public $heroTitle = 'L.Y.X One Step Gel Polish';
+
+	/**
+	 * @var string
+	 */
+	public $heroDesc = 'Allt du behöver i en flaska <br> Lång hållbarhet <span class="hero-red-dot">&bull;</span> Unik pensel';
+
+	/**
 	 * Loads data to be used on example page
 	 */
 	public function loadData()

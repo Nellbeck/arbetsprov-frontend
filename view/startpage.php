@@ -13,7 +13,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title><?= $pageModel->pageTitle ?></title>
-
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap" 
+		rel="stylesheet">
 		<link rel="stylesheet" href="/css/style.css">
 	</head>
 	<body>
@@ -22,7 +25,8 @@
 				<div class="header-logo">
 					<img src="/images/logo.png">
 				</div>
-				<ul class="nav site-nav">
+				<div class="nav site-nav">
+				<ul>
 					<?php
 
 					if ($pageModel->categories) {
@@ -39,17 +43,27 @@
 					?>
 				</ul>
 				<div>
-					<input class="js-search-input" type="search" placeholder="Sök produkter">
+					<input class="js-search-input" type="search" placeholder="Sök...">
+					<button class="search-btn">🔍</button>
+				</div>
 				</div>
 			</div>
 		</div>
 		<div class="startpage-hero">
 			<!-- Hero image -->
+			<img src="/images/hero_image_polish.png" class="hero-image-polish">
+			<!-- Hero text -->
+			<div class="hero-text">
+			<h1><?= $pageModel->heroTitle ?></h1>
+			<p><?= $pageModel->heroDesc ?></p>
+			<a href="#" class="btn btn--primary">Shoppa nu!</a>
+			</div>
+			<img src="/images/hero_image_face.png" class="hero-image-face">
 		</div>
 		<div class="startpage-banner">
 			<div class="l-constrained">
 				<h1><?= $pageModel->pageTitle ?></h1>
-				<?= $pageModel->pageDesc ?>
+				<p><?= $pageModel->pageDesc ?></p>
 			</div>
 		</div>
 
