@@ -130,6 +130,8 @@ ul, nav {
 	margin-right: 5px;
 }
 .btn--primary {
+	background-color: white;
+	cursor: pointer;
 	font-family: "Martel Sans", sans-serif;
 	font-size: 12px;
 	font-weight: bold;
@@ -138,7 +140,11 @@ ul, nav {
 	padding: 5px 20px;
 	border: 1px solid;
 }
-
+.startpage-hero .btn--primary {
+	font-size: 14px;
+	font-weight: bold;
+	padding: 10px 60px;
+}
 /* Startpage */
 .startpage-hero {
 	display: flex;
@@ -165,11 +171,6 @@ ul, nav {
 .hero-text p{
 	color: rgb(134, 134, 134);
 }
-.startpage-hero .btn--primary {
-	font-size: 10px;
-	font-weight: bold;
-	padding: 10px 60px;
-}
 .hero-red-dot {
 	color: rgba(173, 12, 106, 0.61);
 }
@@ -191,6 +192,55 @@ ul, nav {
 }
 .startpage-banner p {
 	font-family: "Martel Sans", sans-serif;
+}
+
+/* Modal */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	justify-content: center;
+	align-items: center;
+}
+.modal-content {
+	background: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	width: 400px;
+	text-align: center;
+	position: relative;
+}
+.modal-content h2 {
+  	font-family: "Martel Sans", sans-serif;
+	color: rgb(134, 134, 134);
+	font-size: 12px;
+}
+.modal-content p {
+	font-family: "Martel Sans", sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+}
+.modal-img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+}
+.close {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	font-size: 24px;
+	font-weight: bold;
+	color: #555;
+	cursor: pointer;
+}
+.close:hover {
+	color: #000;
 }
 
 /* Helpers */

@@ -56,7 +56,8 @@
 			<div class="hero-text">
 			<h1><?= $pageModel->heroTitle ?></h1>
 			<p><?= $pageModel->heroDesc ?></p>
-			<a href="#" class="btn btn--primary">Shoppa nu!</a>
+			<?php $product2 = $pageModel->getProductById(2); ?>
+			<button id="buy-now-btn" class="btn btn--primary">Shoppa nu!</button>
 			</div>
 			<img src="/images/hero_image_face.png" class="hero-image-face">
 		</div>
@@ -109,5 +110,18 @@
 		<script>
 		WGR.example();
 		</script>
+		<!-- The Modal -->
+		<div id="product-modal" class="modal">
+  			<div class="modal-content">
+    			<span class="close">&times;</span>
+
+    			<img src="/images/products/<?= $product2->imageFileName ?>" 
+         		alt="<?= $product2->name ?>" class="modal-img">
+
+    			<h2><?= $product2->name ?></h2>
+    			<p> <?= $product2->price ?> </p>
+    			<button class="btn btn--primary">Köp nu</button>
+ 			 </div>
+		</div>
 	</body>
 </html>
