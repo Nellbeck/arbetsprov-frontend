@@ -68,7 +68,7 @@ ul, nav {
 .site-nav ul {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-between;
 	list-style: none;
 
 	@media (max-width: 768px) {
@@ -82,10 +82,13 @@ ul, nav {
   	}
 }
 .site-nav li {
-	justify-content: space-around;
 	margin-right: 20px;
 	margin-left: 20px;
-	margin-top: 10px;
+
+	@media (max-width: 768px) {
+    margin-top: 10px;
+	margin-bottom: 10px;
+	}	
 }
 .site-nav a {
 	text-decoration: none;
@@ -197,6 +200,11 @@ ul, nav {
 	align-items: center;
 	flex-direction: row;
 	width: 100%;
+
+	@media (max-width: 1330px) {
+	display: flex;
+	flex-direction: column;
+  	}
 }
 .startpage-hero img {
 	display: block;
@@ -204,10 +212,9 @@ ul, nav {
 	width: 24em;
 	height: 24em;
 
-		@media (max-width: 1100px) {
+	@media (max-width: 1100px) {
 	margin: 0 auto;
   	}
-
 }
 .hero-text {
 	font-family: "Martel Sans", sans-serif;
@@ -215,6 +222,7 @@ ul, nav {
 	justify-content: center;
 	text-align: center;
 	margin-bottom: 30px;
+
 		@media (max-width: 1100px) {
 	margin: 30px auto;
   	}
