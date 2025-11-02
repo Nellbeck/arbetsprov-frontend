@@ -8,6 +8,19 @@
     // Bind events
     input.addEventListener('input', filterProducts);
 
+    //Hamburger menu functionality
+    document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navList = document.querySelector(".site-nav ul");
+
+    if (menuToggle && navList) {
+        menuToggle.addEventListener("click", () => {
+        navList.classList.toggle("open");
+        });
+    }
+    });
+
+    // Modal functionality
     document.addEventListener("DOMContentLoaded", function() {
     const modal = document.getElementById("product-modal");
     const btn = document.getElementById("buy-now-btn");

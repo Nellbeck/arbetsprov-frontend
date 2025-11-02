@@ -26,22 +26,23 @@
 					<img src="/images/logo.png">
 				</div>
 				<div class="nav site-nav">
-				<ul>
-					<?php
+					<button class="menu-toggle" aria-label="Öppna meny">☰</button>
+					<ul>
+						<?php
 
-					if ($pageModel->categories) {
-						// Loop names of categories
-						foreach ($pageModel->categories as $category) {
-							?>
-							<li>
-								<a href="#" title="<?= $category->name ?>"><?= $category->name ?></a>
-							</li>
-							<?php
+						if ($pageModel->categories) {
+							// Loop names of categories
+							foreach ($pageModel->categories as $category) {
+								?>
+								<li>
+									<a href="#" title="<?= $category->name ?>"><?= $category->name ?></a>
+								</li>
+								<?php
+							}
 						}
-					}
 
-					?>
-				</ul>
+						?>
+					</ul>
 				<div>
 					<input class="js-search-input" type="search" placeholder="Sök...">
 					<button class="search-btn">🔍</button>
