@@ -34,7 +34,7 @@ class WGR_ExamplePageModel extends WGR_BaseModel
 	/**
 	 * @var string
 	 */
-	public $heroDesc = 'Allt du behöver i en flaska <br> Lång hållbarhet <span class="hero-red-dot">&bull;</span> Unik pensel';
+	public $heroDesc = 'Allt du behöver i en flaska <br> Lång hållbarhet <span class="hero-dot">&bull;</span> Unik pensel';
 
 	/**
 	 * Loads data to be used on example page
