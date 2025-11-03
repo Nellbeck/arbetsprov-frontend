@@ -38,14 +38,14 @@ class WGR_BaseModel
 	public function dbFetchAllPrepared2($sql, $params, $fetchMode)
 	{
 		return json_decode(json_encode(array(
-			array('id' => 1, 'name' => 'Produkt1', 'url' => '#', 'imageFileName' => 'acqua1.png', 'price' => '100', 'color' => 'genomskinlig'),
-			array('id' => 2, 'name' => 'Produkt2', 'url' => '#', 'imageFileName' => 'acqua2.png', 'price' => '100', 'color' => 'röd'),
-			array('id' => 3, 'name' => 'Produkt3', 'url' => '#', 'imageFileName' => 'acqua2.png', 'price' => '100', 'color' => 'röd'),
-			array('id' => 4, 'name' => 'Produkt4', 'url' => '#', 'imageFileName' => 'acqua1.png', 'price' => '100', 'color' => 'genomskinlig'),
-			array('id' => 1, 'name' => 'Produkt5', 'url' => '#', 'imageFileName' => 'acqua3.png', 'price' => '100', 'color' => 'rosa'),
-			array('id' => 2, 'name' => 'Produkt6', 'url' => '#', 'imageFileName' => 'acqua2.png', 'price' => '100', 'color' => 'röd'),
-			array('id' => 3, 'name' => 'Produkt7', 'url' => '#', 'imageFileName' => 'acqua1.png', 'price' => '100', 'color' => 'genomskinlig'),
-			array('id' => 4, 'name' => 'Produkt8', 'url' => '#', 'imageFileName' => 'acqua3.png', 'price' => '100', 'color' => 'rosa'),
+			array('id' => 1, 'name' => 'Sed ut perspiciatis unde omnis iste natus error sim', 'url' => '#', 'imageFileName' => 'acqua1.png', 'price' => '489 kr', 'color' => 'genomskinlig'),
+			array('id' => 2, 'name' => 'Sed ut perspiciatis unde omnis iste natus error sim', 'url' => '#', 'imageFileName' => 'acqua2.png', 'price' => '489 kr', 'color' => 'röd'),
+			array('id' => 3, 'name' => 'Sed ut perspiciatis unde omnis iste natus error sim', 'url' => '#', 'imageFileName' => 'acqua2.png', 'price' => '489 kr', 'color' => 'röd'),
+			array('id' => 4, 'name' => 'Sed ut perspiciatis unde omnis iste natus error sim', 'url' => '#', 'imageFileName' => 'acqua1.png', 'price' => '489 kr', 'color' => 'genomskinlig'),
+			array('id' => 1, 'name' => 'Sed ut perspiciatis unde omnis iste natus error sim', 'url' => '#', 'imageFileName' => 'acqua3.png', 'price' => '489 kr', 'color' => 'rosa'),
+			array('id' => 2, 'name' => 'Sed ut perspiciatis unde omnis iste natus error sim', 'url' => '#', 'imageFileName' => 'acqua2.png', 'price' => '489 kr', 'color' => 'röd'),
+			array('id' => 3, 'name' => 'Sed ut perspiciatis unde omnis iste natus error sim', 'url' => '#', 'imageFileName' => 'acqua1.png', 'price' => '489 kr', 'color' => 'genomskinlig'),
+			array('id' => 4, 'name' => 'Sed ut perspiciatis unde omnis iste natus error sim', 'url' => '#', 'imageFileName' => 'acqua3.png', 'price' => '489 kr', 'color' => 'rosa'),
 		)));
 	}
 }

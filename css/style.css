@@ -133,6 +133,7 @@ ul, nav {
 	grid-template-columns: repeat(4, 1fr);
 	gap: 30px;
 	margin-bottom: 30px;
+	justify-items: center;
 
 	@media (max-width: 1024px) {
     grid-template-columns: repeat(2, 1fr);
@@ -153,6 +154,7 @@ ul, nav {
 	font-family: "Martel Sans", sans-serif;
 	color: rgb(134, 134, 134);
 	font-size: 12px;
+	max-width: 220px;
 }
 .product-item__body {
 }
